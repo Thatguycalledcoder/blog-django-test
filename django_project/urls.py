@@ -22,5 +22,6 @@ urlpatterns = [
     path("ff/", include("fblog.urls")),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
+    path("accounts/", include("accounts.urls")),
     path("", include("blog.urls")),
 ]
